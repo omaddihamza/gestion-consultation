@@ -75,7 +75,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>net.me.gestionconsultationbdcc/net.me.gestionconsultationbdcc.HelloApplication
+                            <mainClass>net.me.gestionconsultationbdcc/net.me.gestionconsultationbdcc.Application
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
