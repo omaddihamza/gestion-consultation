@@ -76,12 +76,15 @@ private Patient selectPatient;
        patient.setTel(textFieldTel.getText());
        ipatientService.addPatient(patient);
        loadPatient();
+        videTextFild();
     }
 
 
-    public Patient getPatient() {
+    private void videTextFild() {
 
-        return null ;
+       textFieldNom.setText("");
+       textFieldPrenom.setText("");
+       textFieldTel.setText("");
 
     }
 

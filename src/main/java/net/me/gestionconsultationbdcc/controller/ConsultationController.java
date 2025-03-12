@@ -63,7 +63,15 @@ public class ConsultationController implements Initializable {
         consultation.setPatient(comboPatient.getSelectionModel().getSelectedItem());
         iConsultationService.addConsultation(consultation);
         loadConsultation();
+        videTextFild();
     }
+
+    private void videTextFild() {
+        textDescription.setText("");
+        dateConsultation.setValue(null);
+        comboPatient.getSelectionModel().clearSelection();
+    }
+
 
     private void loadConsultation(){
         consultations.setAll(iConsultationService.consultationList());
